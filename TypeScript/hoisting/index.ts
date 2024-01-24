@@ -1,15 +1,15 @@
-// Hoisting com funções
+// ==> Hoisting com funções
 Example()
 
 function Example(): void {
     console.log('Hoisting')
 }
 
-// Hoisting com variáveis
+// ==> Hoisting com variáveis
 console.log(example)
 var example = 'example with variables'
 
-// Hoisting em função
+// ==> Hoisting em função
 var y = 20
 
 function fn1() {
