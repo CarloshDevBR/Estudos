@@ -32,5 +32,5 @@ p.greet();
 // Output:
 //
 //   LOG: Entering method.
-//   Hello, my name is Ron.
+//   Hello, my name is Carlos.
 //   LOG: Exiting method.
