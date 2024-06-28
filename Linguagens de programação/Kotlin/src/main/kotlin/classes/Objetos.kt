@@ -1,15 +1,21 @@
 package classes
 
-data class Person(val id: Int, val name: String, val age: Int)
+// data class cria um objeto que armazena dados
+// no data class todos os parametros tem que ser propriedades (atributos)
+data class Person(val id: Int, val name: String, val lastName: String, val age: Int)
 
 fun main() {
-    val user = createUser()
+    val person1 = Person(1, "Carlos", "Henrique", 22)
 
-    println(user)
-}
+    val person2 = Person(2, "Pedro", "Maia", 22)
 
-fun createUser(): Person {
-    val person = Person(1, "Carlos", 22)
+    // Copia sobrescrevendo o age
+    val person3 = person2.copy(age = 30)
 
-    return person
+    // Kotlin compara a referencia na memoria
+    println(person2 == person3)
+
+    println(person1)
+    println(person2)
+    println(person3)
 }
