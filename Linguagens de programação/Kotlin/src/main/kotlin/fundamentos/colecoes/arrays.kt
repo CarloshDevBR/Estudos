@@ -1,4 +1,11 @@
-package fundamentos.types
+package fundamentos.colecoes
+
+/*
+    Arrays - são uma coleção do tipo fixed-size (tamanho fixo)
+    O tamanho deve ser determinado no momento da criacão
+    Também deve ser do tipo SAMETYPE (um tipo único), array de inteiros, booleanos, objetos e etc..
+    Não é possível remover um elemento de um array
+*/
 
 fun main() {
     // Matriz
@@ -40,7 +47,7 @@ fun createEmptyArray() {
 }
 
 fun createArrayConstructor() {
-    val array = Array<Int>(3) { 0 }
+    val array = Array(5) { "" }
 
     println(array.joinToString()) // 0, 0, 0
 }
