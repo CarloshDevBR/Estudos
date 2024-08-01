@@ -1,5 +1,7 @@
 package fundamentos.colecoes
 
+import java.util.Comparator
+
 /*
     Map - É uma coleção que trabalha com chaves e valores
 */
@@ -22,6 +24,13 @@ fun main() {
     // Acessando valores
     println(map[2])
 
+    // Iterando o Map (no Map o it tem dois valores)
+    oldMap.forEach { (k, v) -> println("key=$k and valu=$v") }
+
+    oldMap.keys.forEach { println(it) }
+
+    oldMap.values.forEach { println(it) }
+
     // ------------------------------------------------------------------------------------------- //
     // Criando mutableMap (só é possível converter)
     val mutabMap = map.toMutableMap()
@@ -29,4 +38,16 @@ fun main() {
     mutabMap[4] =  Worker("Silva", 2800.0, "Programmer")
 
     println(mutabMap)
+
+    // ------------------------------------------------------------------------------------------- //
+    // Ordenando valores em sortedMapOf (o utilitário Comparator só pode ser utilizado em sortedMapOf)
+    val hashMap = sortedMapOf(
+        Comparator.reverseOrder(),
+        55 to "Brasil",
+        351 to "Portugal",
+        54 to "Argentina",
+        1 to "United States"
+    )
+
+    println(hashMap)
 }

@@ -1,5 +1,7 @@
 package fundamentos.colecoes
 
+import java.util.Comparator
+
 /*
     Set - Sets criam listas que não terão valores repetidos, se houver ele vai remover
 */
@@ -34,7 +36,10 @@ fun main() {
     println(hashSet)
 
     // ------------------------------------------------------------------------------------------- //
-    // Cria uma lista ordenada (Comparator.reverseOrder irá ordenar de forma decrescente)
+    /*
+        Cria uma lista ordenada. Comparator.reverseOrder irá ordenar de forma decrescente,
+        o utilitário Comparator só pode ser utilizado em sortedMapOf
+    */
     val sortedSet = sortedSetOf(Comparator.reverseOrder(), 1, 3, 5, 2, 6, 7, 4, 5, 9, 9, 10, 8)
 
     println(sortedSet)
