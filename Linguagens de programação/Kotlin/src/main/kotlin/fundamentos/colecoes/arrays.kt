@@ -4,28 +4,23 @@ package fundamentos.colecoes
     Arrays - são uma coleção do tipo fixed-size (tamanho fixo)
     O tamanho deve ser determinado no momento da criacão
     Também deve ser do tipo SAMETYPE (um tipo único), array de inteiros, booleanos, objetos e etc..
-    Não é possível remover um elemento de um array
+    Não é possível remover um elemento de um array. Mas os valores dentro de um array
+    podem ser alterados, mas seus indexes permanecerão na memória
 */
 
 fun main() {
-    // Matriz
-    var listPurchases = arrayOf("Arroz", "Feijão", "Batata", "Uva", "Banana" , "Carne", "Leite")
+    // Matriz (mutável)
+    var listPurchases = arrayOf<Any?>("Arroz", "Feijão", "Batata", "Uva", "Banana" , "Carne", "Leite")
+
+    // Alterando um valor do array
+    listPurchases[6] = null
 
     // Buscando por index
     println(listPurchases[6])
     println(listPurchases[2])
 
-    // Adicionando Ovos
+    // Adicionando Ovos (por de baixo dos panos se cria um novo array e adiciona os elementos)
     listPurchases += "Ovos"
-
-    // Converte uma matriz em uma única String.
-    println(listPurchases.joinToString()) // Saída: Arroz, Feijão, Batata, Uva, Banana, Carne, Leite, Ovos
-
-    // Retorna uma representação de String de uma matriz
-    println(listPurchases.contentToString()) // // Saída: [Arroz, Feijão, Batata, Uva, Banana, Carne, Leite, Ovos]
-
-    // Capturando o tamanho do array
-    println(listPurchases.size)
 
     createArrayOfNulls()
 
