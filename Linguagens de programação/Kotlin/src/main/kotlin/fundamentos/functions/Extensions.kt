@@ -1,7 +1,7 @@
 package fundamentos.functions
 
 // Importando uma extensão de função
-import fundamentos.functions.ext.hide
+import fundamentos.functions.extensions.hide
 
 /*
     Extension Function - permite adicionar novas implementações
