@@ -3,7 +3,7 @@ package fundamentos.functions
 fun main() {
     sayHello()
     sayMyName("Carlos")
-    // Passando duas funções fundamentos.lambdas
+    // Passando duas funções lambdas
     sayMyLastName ("Carlos", { "Ribeiro" }, { "Silva" })
     // Também pode execurtar dessas formas
     // sayMyLastName ("Carlos") { "Silva" }
@@ -25,11 +25,6 @@ fun sayMyName(name: String) {
     println(name)
 }
 
-// Parametro lambda
-fun sayMyLastName(firstName: String, lastName: () -> String, endName: () -> String) {
-    println("$firstName $lastName $endName")
-}
-
 // Retorno de valores
 fun sum(n1: Int, n2: Int): Int {
     return n1 + n2
@@ -37,3 +32,8 @@ fun sum(n1: Int, n2: Int): Int {
 
 // Usando como expressão (apenas com uma única expressão)
 fun multiply(a: Int, b: Int) = a * b
+
+// Parametro lambda
+fun sayMyLastName(firstName: String, lastName: () -> String, endName: () -> String) {
+    println("$firstName $lastName $endName")
+}
