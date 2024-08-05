@@ -13,10 +13,10 @@ package fundamentos.types
 */
 
 fun main() {
-    val name: String = "Carlos"
+    val name: String = "Carlos" // tamanho controlado pela JVVM
     println("$name Silva")
 
-    val char: Char = 'A'
+    val char: Char = 'A' // tamanho controlado pela JVVM
     println(char)
     println(char.code) // código associado ao caractere A
 
@@ -38,6 +38,6 @@ fun main() {
     val doubleNumber: Double = 1.321312323232424 // Double: 8 bytes - 64 bits
     println(doubleNumber)
 
-    val booleanValue: Boolean = false
+    val booleanValue: Boolean = false // tamanho controlado pela JVVM
     println(booleanValue)
 }
