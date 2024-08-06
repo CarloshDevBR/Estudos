@@ -12,3 +12,21 @@ package exercicios2
     5% do salário.
      Em quantos meses o patrimônio de Paula vai superar o patrimônio de Ana?
 */
+
+fun main() {
+    val salary = 10000f
+    var patAna = 0f
+    var patPaula = 0f
+    var mes = 0
+
+    do {
+        patAna += (salary * 0.05f) + (salary * 0.05f) + (salary * 0.002f)
+
+        patPaula += (salary * 0.05f) + (salary * 0.008f)
+
+        mes++
+    } while (patAna > patPaula)
+
+    println("Alcançará em $mes meses")
+    println("patrimonio Paula: $patPaula \nPatrimonio Ana: $patAna")
+}
