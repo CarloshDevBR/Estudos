@@ -1,4 +1,4 @@
-package exercicios2
+package exercicios
 
 /*
      a. Crie um novo arquivo com uma função main.

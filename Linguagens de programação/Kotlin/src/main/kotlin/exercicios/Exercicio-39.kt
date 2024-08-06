@@ -1,4 +1,4 @@
-package exercicios2
+package exercicios
 
 /*
     1. Escreva um programa para ajudar a empresa XPTO calcular o bônus que os funcionários receberão no final

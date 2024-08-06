@@ -1,4 +1,4 @@
-package exercicios2
+package exercicios
 
 /*
     DESAFIO

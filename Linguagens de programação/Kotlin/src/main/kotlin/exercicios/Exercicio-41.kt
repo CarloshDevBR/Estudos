@@ -1,4 +1,4 @@
-package exercicios2
+package exercicios
 
 /*
     1. Escreva um programa para ser usado na de portaria de um evento.

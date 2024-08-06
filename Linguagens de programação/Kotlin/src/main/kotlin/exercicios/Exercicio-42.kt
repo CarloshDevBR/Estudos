@@ -1,4 +1,4 @@
-package exercicios2
+package exercicios
 
 /*
     1. Imprima os números de 1 a 50 na mesma linha em ordem crescente. Saída esperada:

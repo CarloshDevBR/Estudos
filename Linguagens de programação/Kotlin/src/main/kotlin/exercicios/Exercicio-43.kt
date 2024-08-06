@@ -1,4 +1,4 @@
-package exercicios2
+package exercicios
 
 /*
      1. Considere uma caixa d’água de 2 mil litros. Rômulo gostaria de encher a caixa d’água com balões de água de

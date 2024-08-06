@@ -1,0 +1,6 @@
+
+class PartyTest {
+    fun teste() {
+
+    }
+}
