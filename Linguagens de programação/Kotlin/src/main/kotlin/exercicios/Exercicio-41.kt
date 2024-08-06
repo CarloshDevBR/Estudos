@@ -12,10 +12,10 @@ package exercicios
 */
 
 fun main() {
-    val res1 = Party.entryParty("Carlos", 22, "luxo", "XT")
-    val res2 = Party.entryParty("Carlos", 17, "luxo", "XT")
+    val res1 = Party.entryParty("Carlos", 22, "luxo", "XTewqewq")
+    val res2 = Party.entryParty("Carlos", 17, "luxo", "XTeqweqw")
     val res3 = Party.entryParty("Carlos", 18, "luxo", "ads")
-    val res4 = Party.entryParty("Carlos", 20, "ad", "XT")
+    val res4 = Party.entryParty("Carlos", 20, "ad", "XTweqweq")
 
     println(res1)
     println(res2)
@@ -31,8 +31,8 @@ object Party {
     fun entryParty(name: String, age: Int, invitation: String, code: String): String {
         return when {
             age < 18 -> "Menores não são permitidos."
-            invitation != "luxo" && invitation != "premium" -> "Negado. Convite inválido."
-            code != "XL" && code != "XT" -> "Negado. Convite inválido"
+            invitation != "luxo" && invitation != "premium" && invitation != "comum" -> "Negado. Convite inválido."
+            !code.lowercase().startsWith("xl") && !code.lowercase().startsWith("xt") -> "Negado. Convite inválido."
             else -> {
                 people.add(name)
 
