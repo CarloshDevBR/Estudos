@@ -1,15 +1,20 @@
 package fundamentos.classes
 
 fun main() {
-    val a1 = Account(423,"Carlos")
-    val a2 = Account(312,"Silva")
+    val a1 = Account(423, "Carlos")
+    val a2 = Account(312, "Silva")
 
-    a1.deposit(100.00)
-    a2.deposit(1_000_000.0)
-    a2.deposit(1000)
+    // with cria blocos de chamadas para a classe instanciada
+    with(a1) {
+        this.deposit(100.00)
+        this.viewStatus()
+    }
 
-    a1.viewStatus()
-    a2.viewStatus()
+    with(a2) {
+        this.deposit(1_000_000.0)
+        this.deposit(1000)
+        this.viewStatus()
+    }
 }
 
 // Construtor padrão

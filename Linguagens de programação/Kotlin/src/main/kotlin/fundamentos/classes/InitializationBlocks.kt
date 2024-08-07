@@ -1,11 +1,15 @@
 package fundamentos.classes
 
+/*
+    init - útil pra criar valores padrão e validaçoes
+*/
+
 fun main() {
     val s1 = Square(10)
     val s2 = Square(5)
 }
 
-class Square(val size: Int) {
+class Square(private val size: Int) {
     // Chamado toda vez que uma instancia é criada (ideal para validar dados)
     init {
         println("init_1")

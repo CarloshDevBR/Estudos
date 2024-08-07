@@ -38,6 +38,7 @@ private class AccountBank(
         println("constructor foi chamado")
     }
 
+    // Construtor secundário não pode ter a mesma quantidade de parametros que o primário
     constructor(accountName: String, accountNumber: Int, balance: Double = 100.00) : this(accountName, accountNumber) {
         this.balance = balance
     }
