@@ -4,6 +4,8 @@ fun main() {
     Math2.sum(1, 2)
     Math2.mult(2, 2)
     Math2.pi
+
+    Math.PI
 }
 
 // Object declarations mantem uma única instancia da classe

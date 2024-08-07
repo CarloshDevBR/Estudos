@@ -82,6 +82,10 @@ fun main() {
 
     // groupingBy retornará um Grouping e eachCount irá contar cada agrupamento
     People.data().groupingBy { it.name[0] }.eachCount().forEach { (k, v) -> println("$k => $v") }
+
+    // ---------------------------------------------------------------------------------------------------------------//
+    // o avarege calcula a média dos dados
+    println(People.data().map { it.age }.average())
 }
 
 data class People(val name: String, val age: Int) {
