@@ -1,4 +1,4 @@
-package exercicios.`exercicios-16`
+package exercicios.exercicio_16
 
 interface Engine {
     fun start()

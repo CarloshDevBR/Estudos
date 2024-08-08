@@ -1,10 +1,10 @@
-package exercicios.`exercicios-16`
+package exercicios.exercicio_16
 
-class CombustionEngine(private var fuel: Int) : Engine {
+class ElectricEngine(private var battery: Int) : Engine {
     private var engineOn: Boolean = false
 
     override fun start() {
-        if (fuel > 0) {
+        if (battery > 0) {
             engineOn = true
         }
     }
@@ -15,18 +15,18 @@ class CombustionEngine(private var fuel: Int) : Engine {
 
     override fun move() {
         when {
-            fuel == 0 -> println("Está sem combustível")
+            battery == 0 -> println("Está sem carga")
             engineOn -> {
-                consumeFuel()
-                println("vrum vrum")
+                consumeBattery()
+                println("zzzzzzz")
             }
             else -> println("O motor precisa estar ligado!")
         }
     }
 
-    private fun consumeFuel() {
-        fuel--
-        println("Combustível: $fuel")
+    private fun consumeBattery() {
+        battery--
+        println("Bateria: $battery")
     }
 
     override fun status(): String {

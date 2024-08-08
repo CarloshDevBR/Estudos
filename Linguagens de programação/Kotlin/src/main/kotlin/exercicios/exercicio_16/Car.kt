@@ -1,4 +1,4 @@
-package exercicios.`exercicios-16`
+package exercicios.exercicio_16
 
 class Car(private val engine: Engine) {
     fun startEngine() {
