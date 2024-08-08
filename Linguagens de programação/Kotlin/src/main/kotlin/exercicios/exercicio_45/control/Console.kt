@@ -1,4 +1,4 @@
-package exercicios.exercicio_45
+package exercicios.exercicio_45.control
 
 object Console {
     fun readInt(msg: String): Int {
