@@ -16,6 +16,7 @@ fun main() {
         1 -> println("Suco de laranja")
         2 -> println("Suco de uva")
         3 -> println("Suco de morango")
+        in 2..10 -> println("teste")
         else -> println("Nenhuma opção selecionada")
     }
 

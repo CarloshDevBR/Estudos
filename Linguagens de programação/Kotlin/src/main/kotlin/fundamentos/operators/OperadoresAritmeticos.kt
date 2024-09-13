@@ -4,6 +4,7 @@ package fundamentos.operators/*
     / Operador de Divisão
     * Operador de Multiplicação
     % Módulo - Resto da Divisão
+
     ++ Incremento
     -- Decremento
 */

@@ -9,7 +9,7 @@ fun main() {
     // sayMyLastName ("Carlos") { "Silva" }
     // sayMyLastName ("Carlos", lastName = { "Silva" })
     val cal = sum(5, 1)
-    val mult = multiply(5, 5)
+    val mult = multiply(b = 5, a = 10)
     println(cal)
     println(mult)
     println("FIM!")
@@ -30,7 +30,7 @@ fun sum(n1: Int, n2: Int): Int {
     return n1 + n2
 }
 
-// Usando como expressão (apenas com uma única expressão)
+// Inline Function. Usando como expressão (apenas com uma única expressão)
 fun multiply(a: Int, b: Int) = a * b
 
 // Parametro lambda
