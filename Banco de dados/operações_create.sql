@@ -1,0 +1,14 @@
+CREATE TABLE usuarios (
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	name TEXT,
+    age INT,
+    email VARCHAR(30),
+    password TEXT,
+    UNIQUE KEY(email)
+);
+
+CREATE TABLE pessoas (
+	id  INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(100) NOT NULL,
+    date DATE DEFAULT "2024-11-10"
+);

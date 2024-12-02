@@ -1,0 +1,9 @@
+ALTER TABLE usuarios RENAME TO users;
+
+ALTER TABLE users ADD COLUMN job TEXT AFTER age; -- FIRST //
+
+ALTER TABLE users DROP COLUMN job;
+
+ALTER TABLE users CHANGE COLUMN age dateOfBirth TEXT;
+
+ALTER TABLE users MODIFY COLUMN dateOfBirth VARCHAR(10) AFTER password;
